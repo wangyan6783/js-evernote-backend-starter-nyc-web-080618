@@ -5,7 +5,6 @@ class Note {
     this.id = noteObj.id;
     this.title = noteObj.title;
     this.body = noteObj.body;
-    this.user = noteObj.user;
     allNotes.push(this);
   }
 
