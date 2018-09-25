@@ -11,12 +11,8 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
   document.addEventListener("click", (event) => {
     if (event.target.className === "title"){
-      //debugger
-      let noteId = parseInt(event.target.id);
-      let note = allNotes.find((note) => note.id === noteId);
-      console.log(note);
-      noteBodyDiv.innerHTML = note.renderBody();
+      let clickedNote = allNotes.find((note) => note.id === parseInt(event.target.id));
+      noteBodyDiv.innerHTML = clickedNote.renderBody();
     }
   })
-
 })
